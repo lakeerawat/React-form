@@ -1,0 +1,239 @@
+p {
+  color: red;
+}
+.Container{
+  max-width: 1540px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.App{
+  display: flex;
+background-color: #fff;
+justify-content: center
+;}
+.formDiv{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  margin-top: 1rem;
+  min-width: 942px;
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px grey;
+  padding: 2rem;
+}
+.twolableDiv{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.lableDiv{
+  display: flex;
+  width: 48%;
+  margin-top: 1rem;
+  border: 1px solid gray;
+  flex-direction: column;
+  border-radius: 0.2rem;
+  height: 3rem;
+  overflow: hidden;
+}
+  .lableDiv>input{
+    width: 96%;
+    font-size: 1.2rem;
+    height: 100%;
+    font-family: cursive;
+    padding-left: 1rem;
+    font-weight: 500;
+    border: none;
+  }
+  .lableDiv>select{
+    height: 100%;
+    width: 100%;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    color: gray;
+    font-weight: 500;
+  }
+  .genderDiv{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    border: none;
+    margin-top: 1rem;
+  }
+  .genderTag{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    font-family: sans-serif;
+    font-weight: 500;
+    padding: 5px;
+    border: none;
+    color: gray;
+  }
+  .genderOption{
+    padding: 5px;
+    font-size: 1rem;
+    width: 100%;
+    display: flex;
+  }
+  .genderOption>label{
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+  }
+  .genderOption>label>input{
+    width: 1rem;
+    height: 1rem;
+  }
+  .divButton{
+    display: flex;
+    margin-top: 1rem;
+  }
+  .divButton>button{
+    font-size: 1.5rem;
+    width: 7rem;
+    height: 3rem;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #5454e0;
+  }
+  .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .div1{
+    display: flex;
+    width: 90%;
+    align-items: center;
+  }
+  .div2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .div2>span{
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+  }
+  .hline{
+    width: 45%;
+    height: 3px;
+    color: gray;
+    background-color: gray;
+  }
+.spanNum{
+  border: 1px solid;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: gray;
+  color: white;
+  font-size: 1rem;
+}
+.spanNum2{
+  border: 1px solid;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgb(17, 25, 184);
+  color: white;
+  font-size: 1rem;
+}
+.twoErrorDiv{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.twoErrorDiv>p{
+  width: 48%;
+}
+.successDiv{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  color: green;
+  font-size: 1.5rem;
+}
+.dataDiv1{
+  display: flex;
+  width: 100%;
+  color: gray;
+  font-size: 1rem;
+  border-bottom: 1px solid;
+}
+.dataDiv{
+  display: flex;
+  width: 50%;
+}
+@media (max-width:992px){
+  .formDiv {
+    min-width: 700px;
+    margin: auto;
+  }
+  }
+  @media (max-width:742px){
+    .twolableDiv {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+  }
+  .dataDiv{
+    display: flex;
+    width: 50%;
+    overflow: hidden;
+  }
+  .dataDiv{
+font-size: 0.5rem;
+  }
+  .lableDiv {
+    display: flex;
+    width: 95%;
+  }
+  .Container{
+    padding: 0.5rem;
+    max-width: 95%;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  .div2>span{
+    font-size: 0.7rem;
+  }
+  .formDiv {
+    min-width: 100%;
+    padding: 0;
+    padding-bottom: 2rem;
+    margin: 0;
+}
+.divButton>button {
+  width: 10rem;
+}
+.divButton {
+justify-content: center;
+}
+.genderDiv{width: 100%;}
+
+.genderTag{width: 100%;}
+.genderOption{
+  width: 100%;
+  flex-wrap: wrap;
+}
+.genderOption>label{
+  margin: 0.5rem;
+}
+    }
