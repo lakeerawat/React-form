@@ -6,6 +6,7 @@ p {
 display: flex;
 flex-direction: column;
 justify-content: center;
+padding: 4rem;
 }
 .App{
   display: flex;
@@ -95,8 +96,18 @@ justify-content: center
     width: 7rem;
     height: 3rem;
     border-radius: 6px;
+    cursor: pointer;
     color: #fff;
     background-color: #5454e0;
+  }
+  .divButton>button:hover{
+    font-size: 1.6rem;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #343483;
   }
   .header{
     display: flex;
