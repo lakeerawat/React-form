@@ -30,7 +30,7 @@ function Form1() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setFormErrors(validate(formValues));
-    if (Object.keys(formErrors).length === 0) {
+    if (Object.keys(formErrors).length !== 0) {
       setForm1Submission(true);
     }
   };
