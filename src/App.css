@@ -183,6 +183,9 @@ justify-content: center
     min-width: 700px;
     margin: auto;
   }
+  .genderDiv{
+    width: 100%;
+  }
   }
   @media (max-width:742px){
     .twolableDiv {

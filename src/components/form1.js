@@ -30,7 +30,7 @@ function Form1() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setFormErrors(validate(formValues));
-    if (Object.keys(formErrors).length !== 0) {
+    if (Object.keys(formErrors).length === 0) {
       setForm1Submission(true);
     }
   };
@@ -76,6 +76,7 @@ function Form1() {
     } else if (!regex.test(values.email)) {
       errors.email = "This is not a valid email format!";
     }
+    Object.assign(formErrors, errors);
     return errors;
   };
 
@@ -84,15 +85,15 @@ function Form1() {
       <div className="header">
         <div className="div1">
           <span className={`${form1Submission ? "spanNum2" : "spanNum"}`}>
-            1
+            {form1Submission ? "✓" :"1" } 
           </span>
           <div className="hline"></div>
           <span className={`${form2Submission ? "spanNum2" : "spanNum"}`}>
-            2
+          {form2Submission ? "✓" :"2" } 
           </span>
           <div className="hline"></div>
           <span className={`${form2Submission ? "spanNum2" : "spanNum"}`}>
-            3
+          {form2Submission ? "✓" :"3" } 
           </span>
         </div>
         <div className="div2">

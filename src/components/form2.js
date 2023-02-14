@@ -52,6 +52,7 @@ function Form2(props) {
     if (!values.pincode) {
       errors.pincode = "pincode is required!";
     }
+    Object.assign(formErrors, errors);
     return errors;
   };
 
